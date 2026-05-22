@@ -2,6 +2,16 @@
 
 A multi-source data pipeline for U.S. avocado sales data, ending with a SARIMA time-series forecast for the next year of national prices.
 
+The notebook is committed with all cells executed, so the charts and results render inline on GitHub.
+
+## Preview
+
+The 52-week forecast with its confidence band, and the honest backtest that earns it: holding out the last 26 weeks gives a MAPE of about 32%, which says the seasonal signal is real but weekly prices are noisy and a single SARIMA only takes you so far.
+
+| 52-week forecast | Backtest (last 26 weeks held out) |
+|------------------|-----------------------------------|
+| ![SARIMA 52-week forecast with confidence band](figures/sarima_forecast.png) | ![SARIMA backtest against held-out weeks](figures/sarima_backtest.png) |
+
 ## What's in here
 
 - **`avocado_pipeline.ipynb`** - the full pipeline (ingest, validate, clean, EDA, forecast)
