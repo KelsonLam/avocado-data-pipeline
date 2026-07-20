@@ -6,3 +6,8 @@ Thumbs.db
 .vscode/
 .idea/
 output/*.csv
+
+# Virtual environments
+.venv/
+venv/
+env/
